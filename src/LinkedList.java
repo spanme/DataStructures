@@ -1,22 +1,23 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class Node {
-    int val;
-    Node next;
 
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-    }
-
-    public Node(int val, Node next) {
-        this.val = val;
-        this.next = next;
-    }
-
-}
 class LinkedList {
+    private static class Node {
+        int val;
+        Node next;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+        }
+
+        public Node(int val, Node next) {
+            this.val = val;
+            this.next = next;
+        }
+
+    }
     private Node head;
     private Node tail;
     public LinkedList() {
